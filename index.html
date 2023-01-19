@@ -10,12 +10,20 @@
 
 <body>
     
-    <h1></h1>
-    <h2>Solana</h2>
+    
     <div id = container>
     Solana is $<span id = solPrice></span>  
     
-    <input type='number' id = valueInput placeholder='sol'>
+    <input type='number' id = valueInput >
+
+    <button onclick='dropDown()' id = 'dropBtn'>Coins</button>
+
+    <div id = 'itemsOfDropdown' >
+        <a href = 'sol'>Solana</a>
+        <a href = 'eth'>Ethereum</a>
+        <a href = 'btc'>Bitcoin</a>
+    </div>
+    
     <input type='submit' value='Submit' onclick='submit()'>
     
     <span id = howMuch></span>

@@ -1,4 +1,4 @@
-const url = 'https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+const url = 'https://api.coingecko.com/api/v3/simple/price?ids=solana%2Cethereum%2Cbitcoin&vs_currencies=usd%2Cmnt'
 
 async function getData(){
     const response =  await fetch(url);
@@ -19,4 +19,7 @@ async function submit(){
     document.getElementById('howMuch').innerHTML = howMuchMoney;
 }
 
+function dropDown(){
+    
+}
 setInterval(getData,10000);
