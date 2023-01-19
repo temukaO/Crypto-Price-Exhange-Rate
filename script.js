@@ -19,7 +19,6 @@ async function submit(){
     document.getElementById('howMuch').innerHTML = howMuchMoney;
 }
 
-function dropDown(){
-    
-}
+
+
 setInterval(getData,10000);
